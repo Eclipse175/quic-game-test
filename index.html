@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="parent">
+<div id = "container"   class="container">
+        <input placeholder = "Enter expense" type="text" id = 'expense' >
+        <input onfocus="(this.type='date')" onblur="(this.type='text')" placeholder = "Date" type="date" id = 'date'>
+        <input placeholder = "Enter total amount spent" type="number" id = 'total-amount'>
+
+        <button id = "AddExpense">Add expense</button>
+
+        <table id = "tbl">
+            <tr id = "tbl-row">
+                <td id = "expense-tbl" >Expenses</td>
+                <td id = "date-tbl">Date</td>
+                <td id = "amount-tbl">Amount</td>
+                <td id = "tableTD" id = button-tbl></td>
+            </tr>
+        </table>
+</div>
+        </div>
+
+        <script src="script.js" defer></script>
+    </body>
+</html>

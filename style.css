@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body{
+    font-family: 'Poppins', 'sans-serif';
+    background: #0D1317;
+}
+
+.parent{
+    display:flex;
+    justify-content: center;
+}
+
+
+.container{
+    display:flex;
+    flex-direction: column; 
+    padding: 2rem;
+    width: 300px ;
+    justify-content: center;
+}
+
+input{
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid black;
+    margin: 1.4rem;
+}
+
+table{
+    border: 1px solid white;
+    width: 500px;
+    height:80px;
+    margin-top: 5rem;
+    text-align: center;
+    align-self: center; 
+    color:white;
+}
+
+
+
+td{
+    border: 1px solid white;
+    width:1000px;
+    font-size: 20px;
+}
+#date-tbl{
+  width: 2000px;
+}
+
+#tableTD{
+  display:block;
+  width: 80px;
+}
+
+#AddExpense {
+  align-self: center;
+  width: 300px;
+    margin-top: 1rem;
+    border: none;
+    padding: 0.8em 0.5em;
+    outline: none;
+    color: white;
+    font-size: 1rem;
+    position: relative;
+    z-index: 1;
+    cursor: pointer;
+    background: none;
+    text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.45);
+  }
+  
+  #AddExpense:before,
+  #AddExpense:after {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-radius: 10em;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    width: 105%;
+    height: 105%;
+    content: "";
+    z-index: -2;
+    background-size: 400% 400%;
+    background: linear-gradient(
+      60deg,
+      #f79533,
+      #f37055,
+      #ef4e7b,
+      #a166ab,
+      #5073b8,
+      #1098ad,
+      #07b39b,
+      #6fba82
+    );
+  }
+  
+  #AddExpense:before {
+    -webkit-filter: blur(7px);
+    filter: blur(7px);
+    -webkit-transition: all 0.25s ease;
+    transition: all 0.25s ease;
+    -webkit-animation: pulse 10s infinite ease;
+    animation: pulse 10s infinite ease;
+  }
+  
+  #AddExpense:after {
+    -webkit-filter: blur(0.3px);
+    filter: blur(0.3px);
+  }
+  
+  #AddExpense:hover:before {
+    width: 115%;
+    height: 115%;
+  }
+
+  @media screen and (min-width:220px) and (max-width:540px) {
+    table{
+      width: 250px;
+    }
+    td{
+      font-size: 15px;
+    }
+    #AddExpense{
+      padding: 0.8em ;
+      width: 200px;
+    }
+  }
